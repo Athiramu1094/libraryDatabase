@@ -7,6 +7,7 @@ const bookRoutes = require('./routes/bookRoutes')
 const authorRoutes = require('./routes/authorRoutes')
 
 app.use(cors())
+app.use(express.json());
 
 app.use ('/books', bookRoutes)
 app.use ('/authors', authorRoutes)
