@@ -5,13 +5,13 @@ const router = express.Router()
 
 router.get('/', getAllBooks)
 
-router.get('/:bookid', getABook)
+router.get('/:bookId', getABook)
 
 router.post('/', addABook)  
 
-router.put('/:bookid', updateABook)
+router.put('/:bookId', updateABook)
 
-router.delete('/:bookid', deleteABook)
+router.delete('/:bookId', deleteABook)
 
 
 module.exports = router 
