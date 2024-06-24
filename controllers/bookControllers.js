@@ -2,7 +2,7 @@ const Book = require("../model/bookModel")
 
 const getAllBooks = async (req, res) => {
     try {
-        const books = await Book.find({})
+        const books = await Book.find(req.query)
         res.json(books)
     } catch (error) {
         res.status(404).send('Books not found')

@@ -1,6 +1,6 @@
 const Author = require("../model/authorModel");
 
-const gettAllAuthors  = async (req, res) => {
+const getAllAuthors  = async (req, res) => {
    try{
     const authors =await Author.find({});
     res.json(authors)
@@ -52,7 +52,7 @@ const deleteAnAuthor = async (req, res) => {
 }
 
 module.exports = {
-    gettAllAuthors,
+    getAllAuthors,
     getAnAuthor,
     addAnAuthor,
     updateAnAuthor,
